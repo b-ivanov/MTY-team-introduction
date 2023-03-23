@@ -1,0 +1,32 @@
+body {
+	font-family: Montserrat, sans-serif;
+	font-size: 10px;
+	padding: 0px;
+	margin: 0px;
+	background: #011e3c;
+}
+header {
+	padding: 3em 7em;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	justify-content: space-between;
+	align-items: center;
+	box-shadow: 0px 0px 1em #98a2b3;
+}
+header img {
+	max-height: 5em;
+}
+header .social-links {
+	text-align: right;
+}
+header .social-links a {
+	color: #fff;
+	margin: 0px 0.5em;
+	text-decoration: none;
+}
+header a {
+	transition: opacity 300ms ease-out;
+}
+header a:hover {
+	opacity: 0.8;
+}
