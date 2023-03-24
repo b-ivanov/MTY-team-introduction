@@ -1,6 +1,7 @@
 body {
 	font-family: Montserrat, sans-serif;
 	font-size: 10px;
+	color: #fff;
 	padding: 0px;
 	margin: 0px;
 	background: #011e3c;
@@ -29,4 +30,12 @@ header a {
 }
 header a:hover {
 	opacity: 0.8;
+}
+section.team-section {
+	padding: 3em 20em;
+	display: grid;
+	grid-template-columns: 20em auto 20em;
+	justify-content: space-between;
+	align-items: center;
+	text-align: center;
 }
