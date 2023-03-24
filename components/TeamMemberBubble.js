@@ -17,7 +17,7 @@ TeamMemberBubbleTemplate.innerHTML = `
 			border-radius: 50%;
 			border: 1em solid #fff;
 			box-sizing: border-box;
-			margin: 1.5em 0px;
+			margin: 1em 0px;
 		}
 		.team-member-bubble .member-title {
 			font-size: 1.5em;
