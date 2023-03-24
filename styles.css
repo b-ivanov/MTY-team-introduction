@@ -33,6 +33,8 @@ header a:hover {
 }
 section.team-section {
 	padding: 3em 20em;
+}
+section.team-section > * {
 	display: grid;
 	grid-template-columns: 20em auto 20em;
 	justify-content: space-between;

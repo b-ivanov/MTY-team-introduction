@@ -22,4 +22,19 @@ const team = {
 	}
 };
 
-const events = [];
+const events = {
+	doubleLine: [
+		{
+			name: 'Кандидатстване за програмата',
+			description: '',
+			menteeDate: '-',
+			mentorDate: '07/12/2023'
+		}, {
+			name: 'Потвърждение за участие',
+			description: '',
+			menteeDate: '-',
+			mentorDate: '01/03/2023'
+		}
+	],
+	singleLine: []
+};

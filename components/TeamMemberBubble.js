@@ -1,5 +1,5 @@
-const template = document.createElement('template');
-template.innerHTML = `
+const TeamMemberBubbleTemplate = document.createElement('template');
+TeamMemberBubbleTemplate.innerHTML = `
 	<style>
 		.team-member-bubble {
 			transition: opacity 300ms ease-out;
@@ -32,7 +32,7 @@ class TeamMemberBubble extends HTMLElement {
 	constructor() {
 		super();
 		const shadowRoot = this.attachShadow({mode: 'open'});
-		shadowRoot.append(template.content.cloneNode(true));
+		shadowRoot.append(TeamMemberBubbleTemplate.content.cloneNode(true));
 		
 		this.container = shadowRoot.querySelector('.team-member-bubble');
 	}

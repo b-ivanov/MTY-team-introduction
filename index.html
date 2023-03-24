@@ -11,6 +11,7 @@
 		<link rel="stylesheet" href="styles.css">
 		<script type="text/javascript" src="data.js"></script>
 		<script type="text/javascript" src="components/TeamMemberBubble.js"></script>
+		<script type="text/javascript" src="components/EventDoubleLine.js"></script>
 	</head>
 	<body>
 		<header>
@@ -38,9 +39,20 @@
 			</div>
 		</header>
 		<section class="team-section">
-			<team-member-bubble data-type="mentee"></team-member-bubble>
-			<personal-timeline></personal-timeline>
-			<team-member-bubble data-type="mentor"></team-member-bubble>
+			<div class="grid-holder">
+				<team-member-bubble data-type="mentee"></team-member-bubble>
+				<span></span>
+				<team-member-bubble data-type="mentor"></team-member-bubble>
+			</div>
+			<event-double-line>
+				<span slot="eventMenteeDate">01/12/2022</span>
+				<span slot="eventName">Кандидатстване за програмата</span>
+				<span slot="eventMentorDate">01/03/2023</span>
+			</event-double-line>
+			<event-double-line>
+				<span slot="eventName">Потвърждение за участи</span>
+				<span slot="eventMentorDate">01/04/2023</span>
+			</event-double-line>
 		</section>
 		<section class="timeline-section"></section>
 	</body>
