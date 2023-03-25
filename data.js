@@ -1,12 +1,13 @@
 const team = {
 	mentee: {
-		name: 'John Doe',
-		jobTitle: 'web',
-		description: '',
-		interests: ['a', 'b', 'c'],
-		linkedin: 'https://www.linkedin.com/',
-		github: 'https://github.com/',
-		facebook: 'https://www.facebook.com/',
+		name: 'Константин Гогов',
+		jobTitle: 'Mentee',
+		description: 'Здравейте, казвам се Константин, сговорлив и спокоен по душа, асеновградчанин по рождение, усмихнат и отворен към нови предизвикателства. Софтуерен разработчик с над 2 години опит и интерес към уеб технологиите.',
+		age: 25,
+		interests: ['фитнес', 'фотография', 'туризъм'],
+		linkedin: 'https://www.linkedin.com/in/konstantin-gogov',
+		github: 'https://github.com/kgogov',
+		facebook: 'https://www.facebook.com/konstantin.gogov',
 	},
 	mentor: {
 		name: 'Божидар Иванов',
@@ -24,7 +25,7 @@ const events = {
 		{
 			name: 'Кандидатстване за програмата',
 			description: 'Историята ни започва с кандидатстването за "Mentor the young". И двамата намерихме ползи от програмата и решихме да се включим. Бързо и лесно стана кандидатстването през сайта на програмата: https://www.mentortheyoung.com/.',
-			menteeDate: '-',
+			menteeDate: '18/01/2023',
 			mentorDate: '07/12/2023'
 		}, {
 			name: 'Интервю',
@@ -34,7 +35,7 @@ const events = {
 		}, {
 			name: 'Потвърждение за участие',
 			description: 'И така дойде щастливия ден, в който екипа на "Mentor the young" ни информираха, че са ни включили в менторска двойка и потвърдиха участието ни в програмата.',
-			menteeDate: '-',
+			menteeDate: '01/03/2023',
 			mentorDate: '01/03/2023'
 		}
 	],
