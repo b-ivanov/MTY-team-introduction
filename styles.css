@@ -42,11 +42,3 @@ section .grid-holder {
 	align-items: center;
 	text-align: center;
 }
-section .timeline-merge {
-	height: 2em;
-    border-bottom-left-radius: 1em;
-    border-bottom-right-radius: 1em;
-    border: 4px solid #08a67c;
-    border-top: none;
-    margin: 0px 10em;
-}
