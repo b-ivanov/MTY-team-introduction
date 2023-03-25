@@ -52,7 +52,6 @@ OverlayModalTemplate.innerHTML = `
 			.modal-container {
 				margin-top: 0px;
 				max-width: 100%;
-				width: 100%;
 				height: 100%;
 				box-shadow: none;
 				border-radius: 0px;
