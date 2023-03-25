@@ -1,13 +1,13 @@
 const team = {
 	mentee: {
-		name: 'John Doe',
-		jobTitle: 'web',
-		description: '',
-		age: 5,
-		interests: ['a', 'b', 'c'],
-		linkedin: 'https://www.linkedin.com/',
-		github: 'https://github.com/',
-		facebook: 'https://www.facebook.com/',
+		name: 'Константин Гогов',
+		jobTitle: 'Mentee',
+		description: 'Здравейте, казвам се Константин, сговорлив и спокоен по душа, асеновградчанин по рождение, усмихнат и отворен към нови предизвикателства. Софтуерен разработчик с над 2 години опит и интерес към уеб технологиите.',
+		age: 25,
+		interests: ['фитнес', 'фотография', 'туризъм'],
+		linkedin: 'https://www.linkedin.com/in/konstantin-gogov',
+		github: 'https://github.com/kgogov',
+		facebook: 'https://www.facebook.com/konstantin.gogov',
 	},
 	mentor: {
 		name: 'Божидар Иванов',
@@ -27,12 +27,12 @@ const events = {
 		{
 			name: 'Кандидатстване за програмата',
 			description: '',
-			menteeDate: '-',
+			menteeDate: '18/01/2023',
 			mentorDate: '07/12/2023'
 		}, {
 			name: 'Потвърждение за участие',
 			description: '',
-			menteeDate: '-',
+			menteeDate: '01/03/2023',
 			mentorDate: '01/03/2023'
 		}
 	],
