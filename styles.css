@@ -57,7 +57,7 @@ section .grid-holder {
 	text-align: center;
 }
 #modalContainer p {
-	text-align: left;
+	text-align: justify;
 }
 #modalContainer p span {
 	margin: 0px 0.3em;
@@ -65,6 +65,7 @@ section .grid-holder {
     border-radius: 1em;
     color: #011830;
     font-weight: 600;
+	display: inline-block;
 }
 #modalContainer .event-dates-row {
 	display: grid;
@@ -74,4 +75,28 @@ section .grid-holder {
 }
 #modalContainer .event-dates-row span:first-child {
 	color: #08a67c;
+}
+
+@media (max-width: 1000px) {
+	header {
+		padding: 1em 5em;
+	}
+	section {
+		padding: 3em 10em;
+	}
+	section .grid-holder {
+		grid-template-columns: 12em auto 12em;
+	}
+}
+
+@media (max-width: 600px) {
+	header {
+		padding: 1em;
+	}
+	section {
+		padding: 3em;
+	}
+	section .grid-holder {
+		grid-template-columns: 10em auto 10em;
+	}
 }

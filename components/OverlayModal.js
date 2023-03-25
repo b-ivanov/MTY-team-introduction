@@ -42,6 +42,22 @@ OverlayModalTemplate.innerHTML = `
 		.modal-container svg:hover {
 			opacity: 0.7;
 		}
+		@media (max-width: 1000px) {
+			.modal-container {
+				margin-top: 7em;
+				max-width: 70%;
+			}
+		}
+		@media (max-width: 600px) {
+			.modal-container {
+				margin-top: 0px;
+				max-width: 100%;
+				width: 100%;
+				height: 100%;
+				box-shadow: none;
+				border-radius: 0px;
+			}
+		}
 	</style>
 	<div class="modal-background">
 		<div class="modal-container">

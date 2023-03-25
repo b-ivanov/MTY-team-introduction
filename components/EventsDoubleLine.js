@@ -41,10 +41,16 @@ EventsDoubleLineStylesTemplate.innerHTML = `
 			justify-content: center;
 		}
 		.timeline.left {
-			background: linear-gradient(90deg, #ffffff00 0%, #ffffff00 49%, #08a67cff 49%, #08a67cff 51%, #ffffff00 51%, #ffffff00 100%);
+			background: linear-gradient(90deg, #08a67c 0%, #08a67c 100%);
+			background-repeat: no-repeat no-repeat;
+			background-position: 50%;
+			background-size: 3px 100%;
 		}
 		.timeline.right {
-			background: linear-gradient(90deg, #ffffff00 0%, #ffffff00 49%, #ffc943ff 49%, #ffc943ff 51%, #ffffff00 51%, #ffffff00 100%);
+			background: linear-gradient(90deg, #ffc943 0%, #ffc943 100%);
+			background-repeat: no-repeat no-repeat;
+			background-position: 50%;
+			background-size: 3px 100%;
 		}
 		.timeline .event-dot {
 			width: 1.2em;
@@ -52,6 +58,22 @@ EventsDoubleLineStylesTemplate.innerHTML = `
 			border-radius: 50%;
 			background-color: #011e3c;
 			border: 2px solid #fff;
+		}
+		@media (max-width: 1000px) {
+			.grid-holder {
+				grid-template-columns: 12em auto 12em;
+			}
+			.event .event-name {
+				font-size: 1.5em;
+			}
+			.event .event-mentee-date, .event .event-mentor-date {
+				font-size: 1em;
+			}
+		}
+		@media (max-width: 600px) {
+			.grid-holder {
+				grid-template-columns: 10em auto 10em;
+			}
 		}
 	</style>`;
 

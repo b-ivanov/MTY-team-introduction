@@ -15,7 +15,7 @@ TeamMemberBubbleTemplate.innerHTML = `
 		.team-member-bubble img {
 			width: 100%;
 			border-radius: 50%;
-			border: 1em solid #fff;
+			border: 0.5em solid #fff;
 			box-sizing: border-box;
 			margin: 1em 0px;
 		}
@@ -25,6 +25,19 @@ TeamMemberBubbleTemplate.innerHTML = `
 		}
 		.team-member-bubble .member-title {
 			font-size: 1.5em;
+		}
+		@media (max-width: 1000px) {
+			.team-member-bubble .member-name {
+				font-size: 2em;
+			}
+			.team-member-bubble .member-type, .team-member-bubble .member-title {
+				font-size: 1em;
+			}
+		}
+		@media (max-width: 600px) {
+			.team-member-bubble .member-name {
+				font-size: 1.8em;
+			}
 		}
 	</style>
 	<div class="team-member-bubble"></div>
@@ -88,7 +101,7 @@ class TeamMemberBubble extends HTMLElement {
 			<h3>${data.name}</h3>
 			<div>${data.jobTitle}</div>
 			<div style="color: ${color}; text-transform: uppercase;">${isMentor ? 'ментор' : 'младеж'}</div>
-			<p style="text-align: left;">${data.description}</p>
+			<p>${data.description}</p>
 			<p>Интереси:${data.interests.map((interest) => {
 				return `<span style="background: ${color};">${interest}</span>`
 			}).join('')}</p>
