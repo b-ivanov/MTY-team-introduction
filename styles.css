@@ -7,15 +7,29 @@ body {
 	background: #011e3c;
 }
 header {
-	padding: 3em 7em;
+	position: sticky;
+	top: 0px;
+	padding: 1em 7em;
 	display: grid;
-	grid-template-columns: 1fr 1fr;
+	grid-template-columns: 1fr 1fr 1fr;
 	justify-content: space-between;
 	align-items: center;
-	box-shadow: 0px 0px 1em #98a2b3;
+	color: #011e3c;
+	box-shadow: 0px 0px 1em #fff;
+	background: #fff;
+	z-index: 12;
+}
+header .social-links a {
+	color: #011e3c;
+	margin: 0px 0.5em;
+	text-decoration: none;
 }
 header img {
 	max-height: 5em;
+}
+header h1 {
+	text-align: center;
+	text-transform: uppercase;
 }
 header .social-links {
 	text-align: right;
@@ -29,7 +43,7 @@ header a, #modalContainer a {
 	transition: opacity 300ms ease-out;
 }
 header a:hover, #modalContainer a:hover {
-	opacity: 0.8;
+	opacity: 0.7;
 }
 section {
 	padding: 3em 20em;
@@ -46,9 +60,18 @@ section .grid-holder {
 	text-align: left;
 }
 #modalContainer p span {
-	margin: 0px 0.5em;
+	margin: 0px 0.3em;
     padding: 2px 8px;
     border-radius: 1em;
     color: #011830;
     font-weight: 600;
+}
+#modalContainer .event-dates-row {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	font-weight: bold;
+	color: #ffc943;
+}
+#modalContainer .event-dates-row span:first-child {
+	color: #08a67c;
 }

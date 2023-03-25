@@ -6,7 +6,7 @@ TeamMemberBubbleTemplate.innerHTML = `
 			cursor: pointer;
 		}
 		.team-member-bubble:hover {
-			opacity: 0.8;
+			opacity: 0.7;
 		}
 		.team-member-bubble .member-name {
 			font-weight: 900;
@@ -75,8 +75,8 @@ class TeamMemberBubble extends HTMLElement {
 		this.container.appendChild(image);
 		this.container.appendChild(spanType);
 		this.container.appendChild(spanJob);
-		this.container.onclick = (ev) => {
-			toggleModalDisplay(ev, this.getModalBody(type));
+		this.container.onclick = () => {
+			toggleModalDisplay(this.getModalBody(type));
 		};
 	}
 

@@ -15,17 +15,14 @@
 		<script type="text/javascript" src="components/EventsDoubleLine.js"></script>
 		<script type="text/javascript" src="components/TimelinePathMerge.js"></script>
 		<script type="text/javascript">
-			const toggleModalDisplay = (event, modalBody) => {
-				event.stopPropagation();
+			const toggleModalDisplay = (modalBody) => {
 				const modal = document.getElementById('modalContainer');
 				if (modalBody) {
 					modal.innerHTML = modalBody;
 					modal.style.display = '';
 				} else {
-					if (event.target.className === 'modal-background') {
-						modal.innerHTML = '';
-						modal.style.display = 'none';
-					}
+					modal.innerHTML = '';
+					modal.style.display = 'none';
 				}
 			};
 		</script>
@@ -35,6 +32,7 @@
 			<a href="https://www.mentortheyoung.com/" target="_blank">
 				<img src="src/MTY_logo.png" alt="Mentor the young logo">
 			</a>
+			<h1>Season 4</h1>
 			<div class="social-links">
 				<a href="https://www.facebook.com/mentortheyoung/" target="_blank">
 					<svg width="24" height="24" viewBox="0 0 24 24" fill="#98a2b3" xmlns="http://www.w3.org/2000/svg">

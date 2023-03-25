@@ -17,7 +17,7 @@ EventsDoubleLineStylesTemplate.innerHTML = `
 			transition: opacity 300ms ease-out;
 		}
 		.event:hover {
-			opacity: 0.8;
+			opacity: 0.7;
 		}
 		.event .event-name {
 			font-size: 2em;
@@ -78,6 +78,20 @@ EventsDoubleLineTemplate.innerHTML = `
 	</div>
 `;
 
+
+
+const clickHandler = (index) => {
+	const data = events.doubleLine[index];
+	toggleModalDisplay(`
+		<h3>${data.name}</h3>
+		<div class="event-dates-row">
+			<span>${data.menteeDate}</span>
+			<span>${data.mentorDate}</span>
+		</div>
+		<p>${data.description}</p>
+	`);
+}
+
 class EventsDoubleLine extends HTMLElement {
 	constructor() {
 		super();
@@ -91,7 +105,7 @@ class EventsDoubleLine extends HTMLElement {
 						<div class="timeline left">
 							<div class="event-dot"></div>
 						</div>
-						<div class="event">
+						<div class="event" onclick="clickHandler(${ind})">
 							<span class="event-name">${events.doubleLine[ind].name}</span>
 							<span class="event-mentee-date">${events.doubleLine[ind].menteeDate}</span>
 							<span class="event-mentor-date">${events.doubleLine[ind].mentorDate}</span>
