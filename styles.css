@@ -20,15 +20,15 @@ header img {
 header .social-links {
 	text-align: right;
 }
-header .social-links a {
+.social-links a {
 	color: #fff;
 	margin: 0px 0.5em;
 	text-decoration: none;
 }
-header a {
+header a, #modalContainer a {
 	transition: opacity 300ms ease-out;
 }
-header a:hover {
+header a:hover, #modalContainer a:hover {
 	opacity: 0.8;
 }
 section {
@@ -41,4 +41,14 @@ section .grid-holder {
 	justify-content: space-between;
 	align-items: center;
 	text-align: center;
+}
+#modalContainer p {
+	text-align: left;
+}
+#modalContainer p span {
+	margin: 0px 0.5em;
+    padding: 2px 8px;
+    border-radius: 1em;
+    color: #011830;
+    font-weight: 600;
 }

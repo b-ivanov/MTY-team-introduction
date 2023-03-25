@@ -10,9 +10,25 @@
 		<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="styles.css">
 		<script type="text/javascript" src="data.js"></script>
+		<script type="text/javascript" src="components/OverlayModal.js"></script>
 		<script type="text/javascript" src="components/TeamMemberBubble.js"></script>
 		<script type="text/javascript" src="components/EventsDoubleLine.js"></script>
 		<script type="text/javascript" src="components/TimelinePathMerge.js"></script>
+		<script type="text/javascript">
+			const toggleModalDisplay = (event, modalBody) => {
+				event.stopPropagation();
+				const modal = document.getElementById('modalContainer');
+				if (modalBody) {
+					modal.innerHTML = modalBody;
+					modal.style.display = '';
+				} else {
+					if (event.target.className === 'modal-background') {
+						modal.innerHTML = '';
+						modal.style.display = 'none';
+					}
+				}
+			};
+		</script>
 	</head>
 	<body>
 		<header>
@@ -39,6 +55,7 @@
 				</a>
 			</div>
 		</header>
+		<overlay-modal id="modalContainer" style="display: none;"></overlay-modal>
 		<section>
 			<div class="grid-holder">
 				<team-member-bubble data-type="mentee"></team-member-bubble>
