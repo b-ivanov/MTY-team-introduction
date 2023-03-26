@@ -14,6 +14,7 @@ EventsSingleLineStylesTemplate.innerHTML = `
 			row-gap: 1em;
 			cursor: pointer;
 			transition: opacity 300ms ease-out;
+			margin-bottom: .5em;
 		}
 		.event:hover {
 			opacity: 0.7;

@@ -123,6 +123,13 @@ section .grid-holder {
 	transform: scaleX(1);
 }
 
+.mentee-goals-modal-list {
+	text-align: left;
+}
+
+.mentee-goals-modal-list li:not(:last-child) {
+	margin-bottom: .5em;
+}
 
 @media (max-width: 1200px) {
 
