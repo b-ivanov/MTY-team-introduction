@@ -6,6 +6,7 @@ body {
 	margin: 0px;
 	background: #011e3c;
 }
+
 header {
 	position: sticky;
 	top: 0px;
@@ -19,35 +20,46 @@ header {
 	background: #fff;
 	z-index: 12;
 }
+
 header .social-links a {
 	color: #011e3c;
 	margin: 0px 0.5em;
 	text-decoration: none;
 }
+
 header img {
 	max-height: 5em;
 }
+
 header h1 {
 	text-align: center;
 	text-transform: uppercase;
 }
+
 header .social-links {
 	text-align: right;
 }
+
 .social-links a {
 	color: #fff;
 	margin: 0px 0.5em;
 	text-decoration: none;
 }
-header a, #modalContainer a {
+
+header a,
+#modalContainer a {
 	transition: opacity 300ms ease-out;
 }
-header a:hover, #modalContainer a:hover {
+
+header a:hover,
+#modalContainer a:hover {
 	opacity: 0.7;
 }
+
 section {
 	padding: 3em 20em;
 }
+
 section .grid-holder {
 	margin-bottom: 1em;
 	display: grid;
@@ -56,50 +68,92 @@ section .grid-holder {
 	align-items: center;
 	text-align: center;
 }
+
 #modalContainer p {
 	text-align: justify;
 }
+
 #modalContainer p span {
 	margin: 0.3em;
-    padding: 2px 8px;
-    border-radius: 1em;
-    color: #011830;
-    font-weight: 600;
+	padding: 2px 8px;
+	border-radius: 1em;
+	color: #011830;
+	font-weight: 600;
 	display: inline-block;
 }
+
+#modalContainer .event-date-row {
+	font-weight: bold;
+	color: #3f84e3;
+}
+
 #modalContainer .event-dates-row {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	font-weight: bold;
 	color: #ffc943;
 }
+
 #modalContainer .event-dates-row span:first-child {
 	color: #08a67c;
 }
+
+/* Shared */
+.animated-underline {
+	color: #007bff;
+	position: relative;
+	text-decoration: none;
+}
+
+.animated-underline::after {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 2px;
+	bottom: -2px;
+	left: 0;
+	background-color: #007bff;
+	visibility: hidden;
+	transform: scaleX(0);
+	transition: all 0.2s ease-in-out 0s;
+}
+
+.animated-underline:hover::after {
+	visibility: visible;
+	transform: scaleX(1);
+}
+
+
 @media (max-width: 1200px) {
 
 	section {
 		padding: 3em 7em;
 	}
 }
+
 @media (max-width: 1000px) {
 	header {
 		padding: 1em 5em;
 	}
+
 	section {
 		padding: 3em 10em;
 	}
+
 	section .grid-holder {
 		grid-template-columns: 12em auto 12em;
 	}
 }
+
 @media (max-width: 600px) {
 	header {
 		padding: 1em;
 	}
+
 	section {
 		padding: 3em;
 	}
+
 	section .grid-holder {
 		grid-template-columns: 10em auto 10em;
 	}
