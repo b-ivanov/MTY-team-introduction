@@ -60,7 +60,7 @@ section .grid-holder {
 	text-align: justify;
 }
 #modalContainer p span {
-	margin: 0px 0.3em;
+	margin: 0.3em;
     padding: 2px 8px;
     border-radius: 1em;
     color: #011830;
@@ -76,7 +76,12 @@ section .grid-holder {
 #modalContainer .event-dates-row span:first-child {
 	color: #08a67c;
 }
+@media (max-width: 1200px) {
 
+	section {
+		padding: 3em 7em;
+	}
+}
 @media (max-width: 1000px) {
 	header {
 		padding: 1em 5em;
@@ -88,7 +93,6 @@ section .grid-holder {
 		grid-template-columns: 12em auto 12em;
 	}
 }
-
 @media (max-width: 600px) {
 	header {
 		padding: 1em;

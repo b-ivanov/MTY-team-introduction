@@ -42,13 +42,13 @@ OverlayModalTemplate.innerHTML = `
 		.modal-container svg:hover {
 			opacity: 0.7;
 		}
-		@media (max-width: 1000px) {
+		@media (max-width: 1000px) and (min-height: 500px) {
 			.modal-container {
 				margin-top: 7em;
 				max-width: 70%;
 			}
 		}
-		@media (max-width: 600px) {
+		@media (max-width: 600px), (max-height: 500px) {
 			.modal-container {
 				margin-top: 0px;
 				max-width: 100%;
